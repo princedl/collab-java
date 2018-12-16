@@ -11,8 +11,23 @@
   <url>http://maven.apache.org</url>
   
   <properties>
-    <maven.compiler.source>1.7</maven.compiler.source>
-    <maven.compiler.target>1.7</maven.compiler.target>
+    
+            <!-- Change the nd4j.backend property to nd4j-cuda-9.0-platform nd4j-cuda-9.2-platform or nd4j-cuda-10.0-platform to use CUDA GPUs -->
+        <nd4j.backend>nd4j-native-platform</nd4j.backend>
+        <!--<nd4j.backend>nd4j-cuda-9.2-platform</nd4j.backend>-->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <shadedClassifier>bin</shadedClassifier>
+
+
+        <java.version>1.8</java.version>
+        <nd4j.version>1.0.0-beta3</nd4j.version>
+        <dl4j.version>1.0.0-beta3</dl4j.version>
+        <datavec.version>1.0.0-beta3</datavec.version>
+        <arbiter.version>1.0.0-beta3</arbiter.version>
+        <rl4j.version>1.0.0-beta3</rl4j.version>
+    
+    
+  
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
